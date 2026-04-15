@@ -8,10 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "type-check": "tsc --noEmit",
-    "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "lint:fix":jest --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -63,5 +60,5 @@
   "license": "MIT",
   "author": "personal fork — learning project",
   "private": true,
-  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works."
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers."
 }
