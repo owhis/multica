@@ -8,11 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "dependencies": {
+    "lint:fix\n    "test": "
+    "test:coverage": {
     "@ai-sdk/anthropic": "^0.0.39",
     "@ai-sdk/google": "^0.0.52",
     "@ai-sdk/openai": "^0.0.42",
@@ -60,5 +57,5 @@
   "license": "MIT",
   "author": "personal fork — learning project",
   "private": true,
-  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before)."
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before). Added test:coverage script to easily check which parts of the routing/streaming code I've actually exercised with tests."
 }
