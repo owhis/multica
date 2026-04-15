@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",\n    "test:watch": "jest --watch"
+    "lint:fix": "next lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
@@ -58,5 +60,5 @@
   "license": "MIT",
   "author": "personal fork — learning project",
   "private": true,
-  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.')."
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before)."
 }
