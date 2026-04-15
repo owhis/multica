@@ -62,5 +62,6 @@
   },
   "license": "MIT",
   "author": "personal fork — learning project",
-  "private": true
+  "private": true,
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works."
 }
