@@ -11,6 +11,7 @@
     "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
     "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -60,5 +61,6 @@
     "node": ">=18.0.0"
   },
   "license": "MIT",
-  "author": "personal fork — learning project"
+  "author": "personal fork — learning project",
+  "private": true
 }
