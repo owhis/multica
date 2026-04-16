@@ -29,7 +29,9 @@
     // makes it easier to follow control flow while stepping through in the debugger
     "inlineSources": true,
     // strictPropertyInitialization caught several bugs for me while reading through the auth module
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
+    // enabling exactOptionalPropertyTypes to better understand how optional props are used throughout
+    "exactOptionalPropertyTypes": true
   },
   "include": ["src/**/*"],
   // keep test files in compilation for local experimentation
