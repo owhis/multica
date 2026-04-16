@@ -27,7 +27,9 @@
     // helpful for tracing async errors while debugging
     "preserveConstEnums": true,
     // makes it easier to follow control flow while stepping through in the debugger
-    "inlineSources": true
+    "inlineSources": true,
+    // strictPropertyInitialization caught several bugs for me while reading through the auth module
+    "strictPropertyInitialization": true
   },
   "include": ["src/**/*"],
   // keep test files in compilation for local experimentation
