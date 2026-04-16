@@ -25,7 +25,9 @@
       "@/*": ["src/*"]
     },
     // helpful for tracing async errors while debugging
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    // makes it easier to follow control flow while stepping through in the debugger
+    "inlineSources": true
   },
   "include": ["src/**/*"],
   // keep test files in compilation for local experimentation
