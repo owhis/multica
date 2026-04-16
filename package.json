@@ -8,8 +8,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix\n    "test": "
-    "test:coverage": {
+    "lint:fix": "next lint --fix",
+    "test": "jest --watchAll=false",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
     "@ai-sdk/google": "^0.0.52",
     "@ai-sdk/openai": "^0.0.42",
@@ -18,10 +22,7 @@
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-scroll-area": "^1.1.0",
     "@radix-ui/react-select": "^2.1.1",
-    "@radix-ui/react-separator": "^1.1.0",
-    "@radix-ui/react-slot": "^1.1.0",
-    "@radix-ui/react-tooltip": "^1.1.2",
-    "ai": "^3.3.4",
+    "@radix-ui/react-separator": "ui/react-slot": "^1.1.0",^1.1.2",^3.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.441.0",
@@ -57,5 +58,5 @@
   "license": "MIT",
   "author": "personal fork — learning project",
   "private": true,
-  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before). Added test:coverage script to easily check which parts of the routing/streaming code I've actually exercised with tests."
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before). Added test:coverage script to easily check which parts of the routing/streaming code I've actually exercised with tests. Fixed malformed scripts block — lint:fix and test entries were broken/truncated. Added missing dependencies section header (entries were floating after a truncated scripts block)."
 }
