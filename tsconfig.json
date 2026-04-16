@@ -14,8 +14,9 @@
     "declarationMap": true,
     "sourceMap": true,
     "removeComments": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    // enabling these locally to catch unused vars while learning the codebase
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
