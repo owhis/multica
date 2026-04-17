@@ -31,7 +31,9 @@
     // strictPropertyInitialization caught several bugs for me while reading through the auth module
     "strictPropertyInitialization": true,
     // enabling exactOptionalPropertyTypes to better understand how optional props are used throughout
-    "exactOptionalPropertyTypes": true
+    "exactOptionalPropertyTypes": true,
+    // enabling verbatimModuleSyntax to get clearer import/export errors when studying module boundaries
+    "verbatimModuleSyntax": false
   },
   "include": ["src/**/*"],
   // keep test files in compilation for local experimentation
