@@ -11,12 +11,12 @@
     "lint:fix": "next lint --fix",
     "test": "jest --watchAll=false",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --watchAll=false --verbose"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
-    "@ai-sdk/google": "^0.0.52",
-    "@ai-sdk/openai": "^0.0.66",
+    "@ai-sdk/google": "^0."@ai-sdk/openai": "^0.0.66",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-label": "^2.1.0",
@@ -60,5 +60,5 @@
   "license": "MIT",
   "author": "personal fork — learning project",
   "private": true,
-  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before). Added test:coverage script to easily check which parts of the routing/streaming code I've actually exercised with tests. Fixed malformed scripts block — lint:fix and test entries were broken/truncated. Added missing dependencies section header (entries were floating after a truncated scripts block). Fixed malformed dependencies block — @radix-ui/react-separator, @radix-ui/react-slot, and ai entries were concatenated into one broken line. Added @ai-sdk/openai so I can experiment with GPT-4o alongside Anthropic and Google — curious to compare streaming behavior and token reporting across all three providers."
+  "notes": "Personal fork for learning. Studying how the AI SDK streaming and multi-provider routing works. TODO: dig into how onFinish callback works in streamText — want to understand token usage tracking across providers. Fixed truncated @ai-sdk/google version string (was missing version number after '^0.'). Added missing 'test' script (only test:watch existed before). Added test:coverage script to easily check which parts of the routing/streaming code I've actually exercised with tests. Fixed malformed scripts block — lint:fix and test entries were broken/truncated. Added missing dependencies section header (entries were floating after a truncated scripts block). Fixed malformed dependencies block — @radix-ui/react-separator, @radix-ui/react-slot, and ai entries were concatenated into one broken line. Added @ai-sdk/openai so I can experiment with GPT-4o alongside Anthropic and Google — curious to compare streaming behavior and token reporting across all three providers. Added test:verbose script to see per-test output when debugging streaming/routing tests."
 }
